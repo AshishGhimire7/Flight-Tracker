@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>✈️ Flight Tracker</h1>
+
+  <div class="search-box">
+    <input type="text" id="flightNumber" placeholder="Enter Flight Number (e.g. UA101)">
+    <button onclick="trackFlight()">Track Flight</button>
+  </div>
+
+  <div class="auto-update-buttons">
+    <button onclick="startAutoUpdate()">Start Auto-Update</button>
+    <button onclick="stopAutoUpdate()">Stop Auto-Update</button>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?AIzaSyCspQHMuiC1ooiWy1MnLFx4uYsr0_yhqlY&callback=initMap" async></script>
+
+</body>
+</html>
